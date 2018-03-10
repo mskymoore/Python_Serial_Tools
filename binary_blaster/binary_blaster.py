@@ -1,5 +1,27 @@
-import argparse, sys, serial, time
 
+# Title:	binary_blaster.py
+# Author:       Sky Moore (mskymoore@gmail.com)
+# Summary:      Console script that opens a serial port and writes the characters supplied.
+#
+# usage: binary_blaster.py [-h] [-b BAUDRATE] [-t TIMEOUT] p c
+#
+# positional arguments:
+#   p                     Serial_Port, ex: /dev/ttyUSB0, COM24, /dev/ttyS0
+#   c                     Characters to send, must be hexadecimal digits, 0 -
+#                         f/F
+#
+# optional arguments:
+#   -h, --help            show this help message and exit
+#   -b BAUDRATE, --baudrate BAUDRATE
+#                         baud rate to send bytes at, default = 9600 baud
+#   -t TIMEOUT, --timeout TIMEOUT
+#                         timeout for sending and recieving bytes, default = 1
+#                         second
+#
+#
+#
+#
+import argparse, sys, serial, time
 
 def Main():
 
